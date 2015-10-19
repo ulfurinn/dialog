@@ -93,21 +93,21 @@ module Dialog
       opts.common_options = @common_options.dup
       opts
     end
+
+    def box_options=(opts)
+      @box_options = opts
+    end
+
+    def common_options=(opts)
+      @common_options = opts
+    end
+
+    def handlers=(opts)
+      @handlers = opts
+    end
   end
 
   protected
-
-  def box_options=(opts)
-    @box_options = opts
-  end
-
-  def common_options=(opts)
-    @common_options = opts
-  end
-
-  def handlers=(opts)
-    @handlers = opts
-  end
 
   private
 
